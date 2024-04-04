@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
+  
+    <br>
+    
+
+<!--icons-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<!--icons-->
+
+</head>
+<body>
+<form>
+    <title>Cadastro</title>
+<div class="row">
+   <div class="col-9">
+   <h1>Cadastrar Novo Produto</h1>
+   <br>
+</div>
+
+<div class="col-1">
+    <label class="1">1/6</label>
+</div>
+  <div class="col-1">
+    <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+      <div class="progress-bar bg-success" style="width: 18%"></div>
+  </div>
+   </div>
+
+<div class="row">
+    <div class="col-9">
+    <h2>Dados básicos:</h2>
+    </div>
+  <div class="col-2">
+    <label class="obg">(*)Campos Obrigatórios</label>
+</div>
+  </div>
+
+<br>
+<form class="form-control">
+
+<div class="row">
+<div class="col-4">
+ <label class="form-label">Nome do Produto*</label>
+ <input type="text" name="txtnome_Produto" id="idnome_Produto" class="form-control" >
+</div>
+<div class="col-3">
+
+ <label class="form-label">Código (SKU)</label>
+ <svg class="info" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+  </svg>
+ <input type="text" name="Código(SKU)" id="Código(SKU)" class="form-control" >
+</div>
+<div class="col-3">
+ <label class="form-label">Preço de Venda</label>
+ <input type="text" name="PreçodeVenda" id="PreçodeVenda" class="form-control" >
+</div>
+<div class="col-2">
+ <label class="form-label">Unidade</label>
+ <input type="text" name="Unidade" id="Unidade" class="form-control" >
+</div>
+</div>
+
+<br>
+
+<div class="row">
+<div class="col-3">
+<label class="form-label">Condição </label>
+<br>
+ <select class="form-select" name="Condição">
+    <option value="">Novo</option>
+    <option value="">Usado</option>
+ </select>
+</div>
+<div class="col-3">
+ <label for="form-label">Tipo</label>
+ <br>
+ <select class="form-select" name="tipo" id="tipo">
+    <option value="">Produto 1</option>
+    <option value="">Produto 2</option>
+    <option value="">Produto 3</option>
+</select>
+</div>
+
+<div class="col-4">
+ <label class="form-label">Produto Com Composição</label>
+ <div class="form-check form-switch">
+<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+<label class="form-check-label" for="flexSwitchCheckDefault">Desativado</label>
+</div>
+</div>
+
+<div class="col-3">
+  <br>
+<label for="form-label">Categoria</label>
+<svg class="info" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+  </svg>
+  <svg class="conf" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+  </svg>
+
+<br>
+<select class="form-select" name="Categoria" id="Categoria">
+
+    <option value="">Sem categoria</option>
+    <option value="">1</option>
+    <option value="">2</option></select>
+<br>
+<br>
+</div>
+</div>
+
+<div class="row fixed-bottom p-3 bg-light">
+    <div class="col-md-12 bg-white text-dark shadow d-flex align-items-center justify-content-between" style="height: 100px; ">
+        <button type="button" class="btn btn-outline-success">Cancelar</button>
+    <div class="d-flex align-items-center">
+      <div class="col-9">
+    <p class="verde">Ir para mais detalhe do produto</p>
+  </div>
+    <button type="button" class="btn btn-success ms-1 btn-lg" onclick="verificarProduto()">Avançar</button>
+  </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+
+
+</form>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
